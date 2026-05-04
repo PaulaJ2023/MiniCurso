@@ -8,7 +8,7 @@ Este projeto explora como a tecnologia pode contribuir para um futuro mais suste
 
 Site: Github + VScode: [Link](https://paulaj2023.github.io/MiniCurso/)
 
-Slides da apresentação:
+Slides da apresentação no Canva: [Link](https://canva.link/lxn58cyu7zclvn9)
 
 Docs com a organização da apresentação -> [Link](https://docs.google.com/document/d/1FvmHLBq5qQdHjgJMrBF-UdjxvErx2H5bbRsf2biiY5A/edit?usp=sharing)
 
