@@ -10,6 +10,27 @@ body {
   background: linear-gradient(135deg, #0a1f0a, #123d12);
   color: #ccffcc;
 }
+.botao-topo {
+    position: fixed;
+    bottom: 50px; /* Distância do fundo */
+    right: 50px;  /* Distância da esquerda */
+    z-index: 100; /* Garante que fique acima de outros elementos */
+    width: 50px;   /* Ajuste o tamanho da sua imagem */
+    height: 50px;
+    opacity: 0.7;  /* Transparência inicial */
+    transition: 0.3s; /* Animação suave no hover */
+}
+
+.botao-topo img {
+    width: 200%;
+    height: 200%;
+}
+
+.botao-topo:hover {
+    opacity: 1; /* Fica opaco ao passar o mouse */
+    transform: scale(1.1); /* Pequeno aumento no hover */
+}
+
 
 /* parte de cima com o título */
 header {
