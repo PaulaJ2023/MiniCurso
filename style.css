@@ -316,6 +316,17 @@ header h2 {
     }
 }
 
+a {
+    color: #3498db; /* Cor azul */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold;
+}
+
+a:hover {
+    color: #2c3e50; /* Muda a cor ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado */
+}
+
 /* estrutura dos "pés" do código */
 footer{
    background: #0a1f0a;
