@@ -10,6 +10,9 @@ Site: Github + VScode: [Link](https://paulaj2023.github.io/MiniCurso/)
 
 Slides da apresentação no Canva: [Link](https://canva.link/lxn58cyu7zclvn9)
 
+Slides de apresentação no powerpoint: [Tecnologia e Sustentabilidade .pptx](https://github.com/user-attachments/files/27377766/Tecnologia.e.Sustentabilidade.pptx)
+
+
 Docs com a organização da apresentação -> [Link](https://docs.google.com/document/d/1FvmHLBq5qQdHjgJMrBF-UdjxvErx2H5bbRsf2biiY5A/edit?usp=sharing)
 
 Dia da apresentação:
