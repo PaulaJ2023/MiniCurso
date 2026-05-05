@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
 html{
   scrollbar-color: #123d12 #0a1f0a;
   scroll-behavior: smooth;
@@ -6,31 +8,10 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Tektur', sans-serif;
   background: linear-gradient(135deg, #0a1f0a, #123d12);
   color: #ccffcc;
 }
-.botao-topo {
-    position: fixed;
-    bottom: 50px; /* Distância do fundo */
-    right: 50px;  /* Distância da esquerda */
-    z-index: 100; /* Garante que fique acima de outros elementos */
-    width: 50px;   /* Ajuste o tamanho da sua imagem */
-    height: 50px;
-    opacity: 0.7;  /* Transparência inicial */
-    transition: 0.3s; /* Animação suave no hover */
-}
-
-.botao-topo img {
-    width: 200%;
-    height: 200%;
-}
-
-.botao-topo:hover {
-    opacity: 1; /* Fica opaco ao passar o mouse */
-    transform: scale(1.1); /* Pequeno aumento no hover */
-}
-
 
 /* parte de cima com o título */
 header {
@@ -70,8 +51,12 @@ header h2 {
   height: 200px;
   background: linear-gradient(45deg, #7CFF7C, #2ecc71);
   transform: rotate(45deg);
+}
+.box:hover {
+  transform: rotate(45deg), scale(1.05);
   box-shadow: 0 0 30px #7CFF7C;
 }
+
 
 /* estrutura central com os textos */
 .content {
@@ -93,11 +78,10 @@ header h2 {
   justify-content: center;
   gap: 20px;
   padding: 40px;
-}
-
-.cards a{
-  text-decoration: none;
-  color: inherit;
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .card {
@@ -117,11 +101,7 @@ header h2 {
 .card-link:after { /* linha para ser possível ir para a seção sem precisar clicar no texto*/
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -136,15 +116,12 @@ header h2 {
 
 /*estrutura do mapa*/
 .map-responsive{
-   overflow:hidden;
+  overflow:hidden;
 
 }
 
-/*parte da energia*/
-.energia{
-  text-align:left;
-
-  h1{
+/*Título das seções*/
+.board{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,18 +130,59 @@ header h2 {
   border-radius: 50px;
   color: #7CFF7C;
   text-align: center;
-  }
+}
 
+@keyframes flash-shadow {
+  0% {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Start: Visible shadow */
+  }
+  100% {
+    box-shadow: 0 0 15px #7CFF7C;   /* End: Hidden shadow */
+  }
+}
+
+.board:target {
+  animation: flash-shadow 2s ease-out; /* Plays for 2 seconds then stops */
+}
+
+/*Formatação das seções*/
+.section{
+  text-align:left;
   p{
     text-align: center;
   }
-  p1{
-      margin-left: 1100px;
+  h2{
+    color: #7CFF7C;
+    margin-left: 10px;
+  }
+  ul{
+    display: grid;
+    justify-content: center;
+    line-height: 1.4;
+    padding: 30px;
+    ul1{
+      
     }
+    ul2{
+      
+    }
+    ul3{
+      
+    }
+    ul4{
+      
+    }
+  }
+}
 
-    h2{
-      color: #7CFF7C;
-      margin-left: 10px;
+/*parte da energia*/
+.energia{
+    p1{
+      margin-left: 1100px;
+      filter: brightness(0.5);
+      a{
+      color: inherit;
+      }
     }
 
     ul1{
@@ -197,23 +215,6 @@ header h2 {
 
 /*parte da reciclagem*/
 .reciclagem{
-  text-align:left;
-
-  h1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px; 
-  background: #1c3b1c;
-  border-radius: 50px;
-  color: #7CFF7C;
-  text-align: center;
-  }
-
-  p{
-    text-align: center;
-  }
-
   h2{
     color: #7CFF7C;
     margin-left: 10px;
@@ -257,28 +258,6 @@ header h2 {
 
 /*parte da inovação*/
 .inovacão{
-   text-align:left;
-
-  h1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px; 
-  background: #1c3b1c;
-  border-radius: 50px;
-  color: #7CFF7C;
-  text-align: center;
-  }
-
-  p{
-    text-align: center;
-  }
-
-    h2{
-      color: #7CFF7C;
-      margin-left: 10px;
-    }
-
    ul1{
      display: flex;
      line-height: 1.4;
@@ -314,17 +293,6 @@ header h2 {
      gap: 85px;
      padding-top: 1px;
     }
-}
-
-a {
-    color: #3498db; /* Cor azul */
-    text-decoration: none; /* Remove sublinhado */
-    font-weight: bold;
-}
-
-a:hover {
-    color: #2c3e50; /* Muda a cor ao passar o mouse */
-    text-decoration: underline; /* Adiciona sublinhado */
 }
 
 /* estrutura dos "pés" do código */
